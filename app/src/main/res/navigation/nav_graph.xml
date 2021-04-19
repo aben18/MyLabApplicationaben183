@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="edu.uw.tcss450.mylabapplicationaben183.ui.SignInFragment"
+        android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="edu.uw.tcss450.mylabapplicationaben183.ui.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="jwt"
+            app:argType="string" />
+    </fragment>
+</navigation>
